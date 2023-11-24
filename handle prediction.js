@@ -1,6 +1,8 @@
-export default function handlePrediction(prediction) {
+function handlePrediction(prediction) {
 
 
 
-    return prediction
+    console.log(prediction)
 }
+
+export {handlePrediction}

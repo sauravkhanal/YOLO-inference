@@ -1,4 +1,4 @@
-export default async function infer(formData){
+async function infer(formData){
 
     const url = "http://127.0.0.1:8000/infer"
 
@@ -21,3 +21,6 @@ export default async function infer(formData){
         console.error('Error: ', error.message);
     }
 }
+
+
+export {infer}

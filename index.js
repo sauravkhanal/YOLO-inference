@@ -1,11 +1,11 @@
-import infer from 'infer.js'
-import handlePrediction from "./handle prediction";
+import {infer} from 'infer.js'
+import {handlePrediction} from "./handle prediction.js";
 
-async function handleClick(event) {
-    
+function handleClick(event) {
+    //prevent page reload, infer, show predictions
     //prevent page reload
     event.preventDefault();
-    // alert("clicked");
+    alert("clicked");
     
     //show inferring... text
     const result = document.getElementById('loading');
@@ -21,15 +21,15 @@ async function handleClick(event) {
     
     //now infer if user has uploaded image and clicked infer btn
     if (inpImage) {
-        
+
         // alert("file chosen")
-        
+
         //now infer here
         const prediction = infer(formData);
         handlePrediction(prediction);
     }
     else{
-     alert("Please choose a file first.")
+     alert("Please choose a file first.") // this might be redundant as file is *required
 }
 
 
@@ -40,4 +40,6 @@ async function handleClick(event) {
 //     alert("infer");
 //     result.style.color = "red";
 // }
+
+
 
