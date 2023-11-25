@@ -47,7 +47,7 @@ async function infer(formData){
 
     console.log("inside infer")
 
-    const url = "https:yoloapi.khanalsaurav.com/np/inferyolo/"
+    const url = "https://yoloapi.khanalsaurav.com.np/inferyolo/"
 
     try{
         console.log("about to send fetch request")
